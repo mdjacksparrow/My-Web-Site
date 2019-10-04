@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+
+    <!-- Link section -->
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <form>
+                <input id = "text-field" placeholder="Expression" type="text">
+            </form>
+        </div>
+        <div class="btn">
+            <table>
+                <tr class="row">
+                    <input onclick="perform(1)" type="button" value="1">
+                    <input onclick="perform(2)" type="button" value="2">
+                    <input onclick="perform(3)" type="button" value="3">
+                    <input onclick="perform('+')" type="button" value="+">
+                </tr>
+                <br>
+                <tr class="row">
+                    <input onclick="perform(4)" type="button" value="4">
+                    <input onclick="perform(5)" type="button" value="5">
+                    <input onclick="perform(6)" type="button" value="6">
+                    <input onclick="perform('-')" type = "button" value="-">
+                </tr><br>
+                <tr class="row">
+                    <input onclick="perform(7)" type="button" value="7">
+                    <input onclick="perform(8)" type="button" value="8">
+                    <input onclick="perform(9)" type="button" value="9">
+                    <input onclick="perform('*')" type="button" value="x">
+                </tr><br>
+                <tr class="row">
+                    <input  onclick = "perform('!')" type="button" value="n!">
+                    <input onclick="perform(0)" type="button" value="0">
+                    <input onclick="perform('.')" type="button" value=".">
+                    <input onclick="perform('/')" type="button" value="/">
+                </tr><br>
+                <tr class="row">
+                    <input id = "adjust" onclick="c()" type="button" value="clear">
+                    <input id = "adjust" onclick = "undo()"type="button" value="undo">
+                    <input id = "adjust" onclick="equal()" type="button" value="=">
+            </table>
+        </div>
+    </div>
+</body>
+
+<script src="./calc.js"></script>
+</html>

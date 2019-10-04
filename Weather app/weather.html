@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Weather</title>
+    <!-- link with stylesheet -->
+    <link rel="stylesheet" href="./weather.css">
+</head>
+<body>
+    <div class = "nav">
+            <ul>
+                <li class="current"><a href="./index.html">Home</a></li>
+                <li><a href="./applist.html">Apps</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+    </div>
+    <div class="weather">
+        <div class="location">
+            <h1 class="time-zone">Time Zone</h1>
+        </div>
+        <canvas class="icon" width="128" height="auto" ></canvas>            
+        <div class="temp">  
+            <div class="temp-degree">
+                <h2 class="value">34</h2><span class="unit" title="Click to change it" style="cursor: pointer">F</span>
+                <h3 class="temp-description" onclick="start()">Party cloud</h3>
+                <button onclick="start()" id="but">start</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link with js -->
+    <!-- <script src="./test.js"></script> -->
+    <script src="./weaterh.js"></script>
+    <script src="./skycons.js"></script>
+</body>
+</html>

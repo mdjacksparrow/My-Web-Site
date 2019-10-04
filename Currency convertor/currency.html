@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Currency convertor</title>
+    <!-- Style sheet link  -->
+
+    <link rel="stylesheet" href="./currency.css">
+</head>
+<body>
+    <header>
+        <h1>Weight convertor</h1>
+    </header>
+    <div class = "nav">
+            <ul>
+                <li class="current"><a href="./index.html">Home</a></li>
+                <li><a href="currency.html">Apps</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+    </div>
+    <form action="#">
+         <div class="input">
+           <input type="number" placeholder="Enter amount ...Rs." id="inr">
+                </div>
+   </form>
+
+    <div id="output">
+
+        <!-- Card 1 -->
+        <div class="card" style="background-color:blue">
+            <h3>Euro : </h3>
+            <div id="euroOutput"></div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card" style="background-color:green">
+            <h3>US : </h3>
+            <div id="usOutput"></div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card" style="background-color:darkred">
+            <h3>Yen : </h3>
+            <div id="yenOutput"></div>
+        </div>
+    </div>
+
+    <footer>
+        <h3>Created by Mdjack</h3>
+    </footer>
+</body>
+
+<script src="./currency.js"></script>
+</html>

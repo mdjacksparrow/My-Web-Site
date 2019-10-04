@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#172A3A,#0B4F6C);
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* Navbar section  */
+
+.nav{
+    position: absolute;
+    width: 100vw;
+    top: 5px;
+    /* font-size: 5px; */
+    /* height: 40px; */
+    padding: 0;
+    margin: 0;
+    justify-content: left;
+    background-color: #333;
+}
+.nav a{
+    cursor: pointer;
+    /* padding: 0 5px; */
+    color: white;
+    font-size: 3vw;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav li{
+    padding: 2px 15px;
+    list-style: none;
+    display: inline-block;
+}
+
+.nav h1{
+    text-align: center;
+}
+
+.nav highlight , .nav .current{
+    color: #e8491d;
+}
+
+.nav a:hover{
+    color: #e8491d; 
+    font-weight: 600;
+}
+
+
+.weather{
+    position: relative;
+    justify-content: center;
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+}
+
+.weather .location h1{
+    position: absolute;
+    margin: 10px;
+    transform: translate(0,50%);
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+.weather .temp{
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+}
+
+.temp-degree h2{
+    display: inline-block;
+    font-size: 30px;
+}
+.temp-degree span{
+    margin: 5px;
+    padding: 20px;
+    text-align: end;
+    padding-left: 4px;
+    margin-top: 100px;
+    background-color: #172A3A;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 25px;
+}
+
+.temp-degree h3{
+    margin-top: 60px;
+    letter-spacing: 1px;
+}
+
+/* for canvas image  */
+canvas{
+    position:relative;
+    transform:translate(0,50%);
+    left:40%;
+}
+
+button{
+    background-color: #172A3A;
+    color: white;
+    border: none;
+    transform: translate(0%,50%);
+    width: 100px;
+}
